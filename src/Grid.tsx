@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from '@mui/material';
 // TODO - format map statement: return styled grid item with the color property given as bg color
-function MainGrid({ gridItems }: any) {
+function MainGrid({ gridItems, setColors }: any) {
   return (
     <div className="grid">
       <Grid container>

@@ -8,7 +8,7 @@ import MainGrid from './Grid';
 // TODO - grab color code from color picker
 
 function App() {
-  const colors:string[] = ['#daa4b6', '#c1aee1', '#94ccf9'];
+  const [colors, setColors] = React.useState<string[]>(['#daa4b6', '#c1aee1', '#94ccf9']);
   return (
     <div className="App">
       <header className="App-header">
@@ -16,7 +16,7 @@ function App() {
       </header>
       <body>
 
-        <MainGrid gridItems={colors}></MainGrid>
+        <MainGrid setColors={setColors} gridItems={colors}></MainGrid>
       </body>
     </div>
   );
